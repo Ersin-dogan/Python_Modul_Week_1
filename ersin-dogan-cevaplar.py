@@ -34,13 +34,20 @@ else:
 
 
 #########// soru-5 cevabı
-if sayial % 2 == 0:
-    print(f"{sayial} Girdiğin sayı çift sayıdır.")
+sayi = int(input("Lütfen pozitif bir tam sayı girin: "))
+basla = 1 
+if sayi < 0:
+    print("Lütfen pozitif bir tam sayı girin.")
 else:
-    print(f"{sayial} Girdiğin sayı tek sayıdır.")
+    for i in range(1, sayi + 1):
+        basla *= i
+    print(f" {sayi} Faktöriyel: {basla}")
 
 
 #########// soru-6 cevabı
+
+
+
 
 
 
