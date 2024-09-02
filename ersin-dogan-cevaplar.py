@@ -34,6 +34,13 @@ else:
 
 
 #########// soru-5 cevabı
+if sayial % 2 == 0:
+    print(f"{sayial} Girdiğin sayı çift sayıdır.")
+else:
+    print(f"{sayial} Girdiğin sayı tek sayıdır.")
+
+
+#########// soru-6 cevabı
 
 
 
