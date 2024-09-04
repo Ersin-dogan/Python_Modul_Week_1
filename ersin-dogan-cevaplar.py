@@ -124,3 +124,28 @@ elif vki < 40:
     print(f"Vücut kitle indeksiniz: {vki:.2f}. Sonuç: 2.Derece Obezsiniz.")   
 
 
+#########// soru-11 cevabı
+sayi1 = int(input("Birinci sayıyı girin: "))
+sayi2 = int(input("İkinci sayıyı girin: "))
+sayi3 = int(input("Üçüncü sayıyı girin: "))
+if sayi1 >= sayi2 and sayi1 >= sayi3:
+    enbuyuk = sayi1
+elif sayi2 >= sayi1 and sayi2 >= sayi3:
+    enbuyuk = sayi2
+else:
+    enbuyuk = sayi3
+print(f"En büyük sayı: {enbuyuk}")
+
+
+#########// soru-12 cevabı
+for i in range(1, 5):
+    dersadi = input(f"{i}. dersin adını girin: ")
+    arasinav = float(input(f"{dersadi} dersinin ara sınav notunu girin: "))
+    finalsinav = float(input(f"{dersadi} dersinin final notunu girin: "))
+    sonuc = (0.4 * arasinav) + (0.6 * finalsinav)
+    if sonuc < 50:
+        print(f"{dersadi} dersi: KALDI")
+    else:
+        print(f"{dersadi} dersi: GEÇTİ")
+
+
