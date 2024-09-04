@@ -69,7 +69,6 @@ else:
 #########// soru-7 cevabı
 limit = int(input("Bir limit giriniz: "))
 fib_liste = [0, 1]
-
 # Limit durumlarına göre liste atamaları
 if limit == 0:
     fib_liste = [0]
@@ -80,7 +79,6 @@ else:
     for i in range(2, limit):
         next_fib = fib_liste[i - 1] + fib_liste[i - 2]
         fib_liste.append(next_fib)
-
 # Hesaplanan Fibonacci buraya yazdır
 print(fib_liste)
 
