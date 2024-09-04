@@ -85,13 +85,42 @@ else:
 print(fib_liste)
 
 
+#########// soru-8 cevabı
+metinal = input("Lütfen bir metin giriniz")
+terscevir = metinal[::-1]
+print(f"{terscevir}")
 
 
 
+#########// soru-9 cevabı
+kelimeal = input("Bir kelime giriniz: ").lower()
+length = len(word)
+is_palindrome = True
+for i in range(length // 2):
+    if word[i] != word[length - i - 1]:
+        is_palindrome = False
+        break
+if is_palindrome:
+    print(f"'{word}' bir palindromdur.")
+else:
+    print(f"'{word}' bir palindrom değildir.")
 
 
-
-
-
+#########// soru-10 cevabı
+agirlik = float(input("Kilonuzu girin (kg): "))
+boy = float(input("Boyunuzu girin (metre cinsinden, örn: 1.75): "))
+vki = agirlik / (boy ** 2)
+if vki < 18.5:
+    print(f"Vücut kitle indeksiniz: {vki:.2f}. Sonuç: Zayıf.")    
+elif 18.5<= vki < 24.9:
+    print(f"Vücut kitle indeksiniz: {vki:.2f}. Sonuç: Normal kilolu.")
+elif 24.9<= vki < 29.9:
+    print(f"Vücut kitle indeksiniz: {vki:.2f}. Sonuç: Fazla kilolu.")
+elif 30 <= vki < 34.9:
+    print(f"Vücut kitle indeksiniz: {vki:.2f}. Sonuç: 1.Derece Obezsiniz.")
+elif 35 <= vki < 39.9:
+    print(f"Vücut kitle indeksiniz: {vki:.2f}. Sonuç: 2.Derece Obezsiniz.")   
+elif vki < 40:
+    print(f"Vücut kitle indeksiniz: {vki:.2f}. Sonuç: 2.Derece Obezsiniz.")   
 
 
