@@ -45,7 +45,44 @@ else:
 
 
 #########// soru-6 cevabı
+sayial = int(input("Bir sayı giriniz: "))
 
+if sayial <= 1:
+    print(f"{sayial} bir asal sayı değildir.")
+elif sayial == 2:
+    print(f"{sayial} bir asal sayıdır.")
+else:
+    if sayial % 2 == 0:
+        print(f"{sayial} bir asal sayı değildir.")
+    else:
+        asalmi = True
+        for i in range(3, int(sayial ** 0.5) + 1, 2):
+            if sayial % i == 0:
+                asalmi = False
+                break
+        if asalmi:
+            print(f"{sayial} bir asal sayıdır.")
+        else:
+            print(f"{sayial} bir asal sayı değildir.")
+
+
+#########// soru-7 cevabı
+limit = int(input("Bir limit giriniz: "))
+fib_liste = [0, 1]
+
+# Limit durumlarına göre liste atamaları
+if limit == 0:
+    fib_liste = [0]
+elif limit == 1:
+    fib_liste = [0, 1]
+else:
+    # Dizideki üçüncü elemandan başlayarak limit sayısına kadar Fibonacci hesaplaması
+    for i in range(2, limit):
+        next_fib = fib_liste[i - 1] + fib_liste[i - 2]
+        fib_liste.append(next_fib)
+
+# Hesaplanan Fibonacci buraya yazdır
+print(fib_liste)
 
 
 
